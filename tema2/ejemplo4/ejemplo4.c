@@ -7,7 +7,7 @@ int global = 10;
 
 void* hilo(void *arg){
 	global = 100;
-	printf("Variable después del hilo\n");
+	printf("Variable después del hilo desde el hilo\n");
 	printf("Global: %d\n",global);
 	getchar();
 	return 0;
@@ -26,7 +26,7 @@ int main(){
 		return -1;
 	}
 	pthread_join(id_h,NULL);
-	printf("Variables después del hilo\n");
+	printf("Variables después del hilo desde el padre\n");
 	printf("Global: %d\n",global);
 	getchar();
 	return 0;
