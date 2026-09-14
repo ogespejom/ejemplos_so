@@ -21,7 +21,7 @@ int main(){
 	shared_counter = 0; //Inicializa a 0 el contadod
 	/*Creación de los hilos que van a contar*/
 	pthread_create(&thread1, NULL, increment_counter, &iterations_per_thread);
-	usleep(1000);
+	usleep(500);
 	pthread_create(&thread2, NULL, increment_counter, &iterations_per_thread);
 	pthread_join(thread1,NULL);
 	pthread_join(thread2,NULL);

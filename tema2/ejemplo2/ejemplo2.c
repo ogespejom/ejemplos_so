@@ -19,6 +19,6 @@ int main(){
 		getchar();
 	} else {
 		printf("Este es el proceso padre con PID: %d\n", getpid());
-		wait(NULL); //Quitar para probar la secuencia de procesos
+		//wait(NULL); //Quitar para probar la secuencia de procesos
 	}
 }

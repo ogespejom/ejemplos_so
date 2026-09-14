@@ -7,6 +7,7 @@ int global = 10;
 
 void* hilo(void *arg){
 	global = 100;
+	sleep(10);
 	printf("Variable después del hilo desde el hilo\n");
 	printf("Global: %d\n",global);
 	getchar();

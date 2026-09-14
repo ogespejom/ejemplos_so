@@ -22,7 +22,7 @@ int main(){
 		exit(1);
 	}
 	printf("El hilo se encuentra funcionando en segundo plano...");
-	sleep(5);
+	//sleep(5);
 	getchar();
 	printf("El contador llegó hasta: %ld\n", contador);
 	exit(0);	
